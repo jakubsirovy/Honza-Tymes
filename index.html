@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Honza Tymeš</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Montserrat&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/66e942e5b8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.name {
+  font-family: 'Lobster', cursive;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 72px;
+}
+.center {
+  text-align: center;
+}
+.orange {
+  color: #ff5200;
+}
+.footertext {
+  color: #ffffff;
+  margin: 0px;
+  line-height: 40px;
+}
+h1, h2 {
+  font-family: 'Lobster', cursive;
+  margin: 10px;
+}
+p {
+  color: #333333;
+  margin: 10px;
+}
+.icon {
+  font-size: 36px;
+  margin: 5px;
+}
+.icon:link, .icon:active, .icon:visited {
+  color: #ff5200;
+}
+.icon:hover {
+  color: #333333;
+}
+.footerme:link, .footerme:active, .footerme:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footerme:hover {
+  color: #333333;
+  text-decoration: none;
+}
+header {
+  text-align: center;
+  background: #ff5200;
+  color: #ffffff;
+}
+.body{
+  padding: 0px 20% 0px 20%;
+}
+.inner-header {
+  height: 400px;
+  width: 100%;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.mauto {
+  margin: auto;
+}
+.wave {
+  margin-bottom: -10px;
+}
+body {
+  background-color: #ffffff;
+}
+#footer {
+  background: #ff5200;
+  height: 40px;
+}
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 26px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+}
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.row {
+  margin-bottom: 25px;
+  text-align: center;
+}
+.honza {
+  background: url("https://graph.facebook.com/honzatymesofficial/picture?width=500&height=500");
+}
+.pavel {
+  background: url("https://graph.facebook.com/100007811648144/picture?width=500&height=500");
+}
+.seban {
+  background: url("https://graph.facebook.com/100001534992433/picture?width=500&height=500");
+}
+.erik {
+  background: url("https://graph.facebook.com/100000463375140/picture?width=500&height=500");
+}
+.image {
+  width: 200px;
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  min-width: 200px;
+  min-height: 200px;
+}
+.image:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.info {
+  height: 100%;
+  margin: auto;
+}
+iframe {
+  border: 0px;
+}
+@media (max-width: 970px) {
+  .body{
+    padding: 0px 15% 0px 15%;
+  }
+}
+@media (max-width: 870px) {
+  .body{
+    padding: 0px 10% 0px 10%;
+  }
+}
+@media (max-width: 770px) {
+  .body{
+    padding: 0px 25px 0px 25px;
+  }
+}
+@media (max-width: 670px) {
+}
+</style>
+
+<body>
+<header>
+    <div class="inner-header flex">
+        <h1 class="name">Honza <br>Tymeš</h1>
+    </div>
+    <div style="margin-bottom: 10px;">
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280"><path fill="#ffffff" fill-opacity="1" d="M0,256L60,240C120,224,240,192,360,197.3C480,203,600,245,720,240C840,235,960,181,1080,165.3C1200,149,1320,171,1380,181.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+</header>
+  
+<div class="body">
+    <div class="chip">
+        <img src="https://yt3.ggpht.com/a/AGF-l7_oPPKegQI4ZQSFLRPdNQQf4OATibReOq__5w=s288-c-k-c0xffffffff-no-rj-mo" alt="Person" width="96" height="96">
+        Čau lidi 👋
+    </div>
+    <p>Jmenuju se Honza Tymeš, baví mě zpívat, natáčet vlogy a parkour.</p>
+    <br>
+    <div id="map">
+        <h1 class="center">Crazy Wolf mapa</h1>
+        <iframe src="https://www.google.com/maps/d/u/1/embed?mid=16ggEz1T0rJ8F_6jlmRPkov9PXKzSyfKr" width="100%" height="480"></iframe>
+    </div>
+    <div id="hood">
+        <h1 class="center">Honzův hood</h1>
+        <div class="row no-gutters">
+            <div class="col-sm-6 image honza"></div>
+            <div class="col-sm-6 info">
+                <h2 class="center">Honza Tymeš</h2>
+                <p class="center orange">Influencer</p>
+                <p class="center">Romantik, lovec dívčích srdcí, zpěvák a parkourista. Honza je na sebe tvrdej, trénuje co to dá a od svého dětství pije Crazy Wolf (hlavně ten oranžovej).</p>
+                <div class="flex mauto">
+                  <a href="https://www.instagram.com/jantymes/" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.facebook.com/honzatymesofficial/" target="_blank" class="icon"><i class="fab fa-facebook"></i></a>
+                  <a href="https://twitter.com/HonzaTymes" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.youtube.com/c/HonzaTyme%C5%A1Official" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-sm-6 image seban"></div>
+          <div class="col-sm-6 info">
+              <h2 class="center">Sebastian Macura (Seban)</h2>
+              <p class="center orange">Honzy kámoš</p>
+              <p class="center">Jeho koníčkem jsou nízká auta a bejval to i rap, ale přestal ho bavit. Jednou by chtěl být mechanikem. S Honzou se baví od svých osmi let. Dělali spolu parkour, ale nyní se mu moc nevěnuje – našel se ve freestyle scooteringu.</p>
+              <div class="flex mauto">
+                <a href="https://www.instagram.com/ten_nikdo_6k1/" target="_blank"  class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/sebastian.r.macura" target="_blank"  class="icon"><i class="fab fa-facebook"></i></a>
+              </div>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-sm-6 image erik"></div>
+          <div class="col-sm-6 info">
+              <h2 class="center">Erik Macura (Cray)</h2>
+              <p class="center orange">Honzy kámoš a nadějnej rapper</p>
+              <p class="center">Jeho sen byl od malička bavit lidi. Už od základní školy si pro bavení lidí vybral hudbu, konkrétně Rap, který dnes už pátým rokem aktivně tvoří. S Honzou se zná od prvního stupně základní školy, kdy chodil ven s jeho starším bratrem Láďou. Jeho sen je mít své vlastní nahrávací studio kde by pomáhal začínajícím talentům.</p>
+              <div class="flex mauto">
+                <a href="https://www.instagram.com/cray.ber_to/" target="_blank"  class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/S.macura.erik" target="_blank"  class="icon"><i class="fab fa-facebook"></i></a>
+              </div>
+          </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-sm-6 image pavel"></div>
+            <div class="col-sm-6 info">
+                <h2 class="center">Pavel Vávra</h2>
+                <p class="center orange">Manažer</p>
+                <p class="center">Tenhle kluk se narodil pro natáčení. Od mala se zajímal o kameru a vydrželo mu to doposud. Jeho nejdůležitější výbavou je mince.</p>
+                <div class="flex mauto">
+                  <a href="https://www.instagram.com/lost_samyang/" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.facebook.com/lost.lektor" target="_blank" class="icon"><i class="fab fa-facebook"></i></a>
+                  <a href="https://twitter.com/toxxtalgiafilm" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+  <p class="center footertext">Coded by <a href="https://www.instagram.com/jakubsirovy/" class="footerme">@jakubsirovy</a></p>
+</div>
+</body>
+</html>
