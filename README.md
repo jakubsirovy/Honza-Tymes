@@ -1,4 +1,4 @@
-# Honza-Tymes
+# Honza_Tymes
 
 Webové stránky Novoborské legendy Honzy Tymeše!
 
